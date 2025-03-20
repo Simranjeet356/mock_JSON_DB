@@ -14,7 +14,7 @@ app.use((req, res, next)=>{
     const time = new Date();
     console.log(time, req.url,req.method);
     next();
-});
+}); 
 app.get('/home',(req,res) =>{
   console.log('This is always trigged secondly');
 });
